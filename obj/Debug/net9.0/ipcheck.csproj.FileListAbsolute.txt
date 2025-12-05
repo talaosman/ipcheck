@@ -1,0 +1,14 @@
+/home/tala/ipcheck/bin/Debug/net9.0/ipcheck
+/home/tala/ipcheck/bin/Debug/net9.0/ipcheck.deps.json
+/home/tala/ipcheck/bin/Debug/net9.0/ipcheck.runtimeconfig.json
+/home/tala/ipcheck/bin/Debug/net9.0/ipcheck.dll
+/home/tala/ipcheck/bin/Debug/net9.0/ipcheck.pdb
+/home/tala/ipcheck/obj/Debug/net9.0/ipcheck.GeneratedMSBuildEditorConfig.editorconfig
+/home/tala/ipcheck/obj/Debug/net9.0/ipcheck.AssemblyInfoInputs.cache
+/home/tala/ipcheck/obj/Debug/net9.0/ipcheck.AssemblyInfo.cs
+/home/tala/ipcheck/obj/Debug/net9.0/ipcheck.csproj.CoreCompileInputs.cache
+/home/tala/ipcheck/obj/Debug/net9.0/ipcheck.dll
+/home/tala/ipcheck/obj/Debug/net9.0/refint/ipcheck.dll
+/home/tala/ipcheck/obj/Debug/net9.0/ipcheck.pdb
+/home/tala/ipcheck/obj/Debug/net9.0/ipcheck.genruntimeconfig.cache
+/home/tala/ipcheck/obj/Debug/net9.0/ref/ipcheck.dll
