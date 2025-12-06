@@ -13,18 +13,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Login to Azure Container Registry using admin credentials
       - name: Log in to ACR
         uses: azure/docker-login@v1
         with:
-          login-server: talaacr2024.azurecr.io
+          login-server: talaacr.azurecr.io   # <-- use exact login server from portal
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
 
-      # Build Docker image
       - name: Build Docker image
-        run: docker build -t talaacr2024.azurecr.io/ipcheck:latest .
+        run: docker build -t talaacr.azurecr.io/ipcheck:latest .
 
-      # Push Docker image
       - name: Push Docker image
-        run: docker push talaacr2024.azurecr.io/ipcheck:latest
+        run: docker push talaacr.azurecr.io/ipcheck:latest
