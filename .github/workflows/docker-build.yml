@@ -8,20 +8,23 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Azure Login
-        uses: azure/login@v1
+      # Login to Azure Container Registry using admin credentials
+      - name: Log in to ACR
+        uses: azure/docker-login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          login-server: talaacr2024.azurecr.io
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
 
-      - name: Login to ACR
-        run: az acr login --name talaacr2024
-
+      # Build Docker image
       - name: Build Docker image
         run: docker build -t talaacr2024.azurecr.io/ipcheck:latest .
 
+      # Push Docker image
       - name: Push Docker image
         run: docker push talaacr2024.azurecr.io/ipcheck:latest
